@@ -63,7 +63,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-**First time?** You'll see a lock screen. The password is in the Notes app once you unlock (or just check the code, I'm not hiding it 😄).
+**First time?** You'll see a lock screen. The password is in the Notes app once you unlock (or just check the code, I'm not hiding it lol).
 
 ## Building for Production
 
