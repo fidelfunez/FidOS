@@ -128,9 +128,8 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 - **Website**: [fidelfunez.netlify.app](https://fidelfunez.netlify.app)
-- **Email**: fidel@paidin.io
+- **Email**: fidelfunezf@gmail.com
 - **GitHub**: [@fidelfunez](https://github.com/fidelfunez)
-- **LinkedIn**: [fidel-funez](https://www.linkedin.com/in/fidel-funez)
 - **X**: [@fidelfunez](https://x.com/fidelfunez)
 
 ---

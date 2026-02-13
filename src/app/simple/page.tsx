@@ -56,18 +56,18 @@ const SimpleView: React.FC = () => {
             Fidel Fúnez C.
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto">
-            Software Engineer & UI/UX Designer
+            Data Engineer & Full-Stack Developer
           </p>
           <p className="text-lg text-white/60 mb-12 max-w-2xl mx-auto">
-            Crafting digital experiences with modern technologies and a passion for clean, intuitive design.
+            Building data systems, ETL pipelines, and full-stack applications. Fluent in English and Spanish, based in CST timezone.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/simple/projects" className="px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors">
               View Projects
             </a>
-            <button className="px-8 py-4 bg-transparent text-white font-semibold rounded-lg border-2 border-white/30 hover:bg-white/10 transition-colors">
+            <a href="/Resume.pdf" download="Fidel_Funez_Resume.pdf" className="px-8 py-4 bg-transparent text-white font-semibold rounded-lg border-2 border-white/30 hover:bg-white/10 transition-colors inline-block text-center">
               Download Resume
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -90,8 +90,8 @@ const SimpleView: React.FC = () => {
               </p>
               <p className="text-lg text-white/80 mb-6 leading-relaxed">
                 When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
-                or sharing knowledge with the Bitcoin dev community. I believe in writing clean, maintainable code and 
-                staying up-to-date with industry best practices.
+                or diving into messy datasets to find the story in the data. I believe in writing clean, maintainable code 
+                and staying up-to-date with industry best practices.
               </p>
               <div className="flex gap-4">
                 <a href="/simple/about" className="text-orange-300 hover:text-orange-200 font-semibold transition-colors">
@@ -130,64 +130,64 @@ const SimpleView: React.FC = () => {
           <h2 className="text-4xl font-bold text-white text-center mb-16">Skills & Technologies</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-              <h3 className="text-xl font-bold text-white mb-4">Frontend</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Data & ETL</h3>
               <div className="space-y-2">
                 <div className="flex justify-between">
-                  <span className="text-white/80">React</span>
+                  <span className="text-white/80">Python</span>
                   <span className="text-orange-300">95%</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-white/80">TypeScript</span>
+                  <span className="text-white/80">SQL</span>
+                  <span className="text-orange-300">95%</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-white/80">Pandas</span>
                   <span className="text-orange-300">90%</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-white/80">Next.js</span>
-                  <span className="text-orange-300">85%</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-white/80">Tailwind CSS</span>
-                  <span className="text-orange-300">90%</span>
+                  <span className="text-white/80">Apache Spark</span>
+                  <span className="text-orange-300">80%</span>
                 </div>
               </div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-              <h3 className="text-xl font-bold text-white mb-4">Backend</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Cloud & Databases</h3>
               <div className="space-y-2">
                 <div className="flex justify-between">
-                  <span className="text-white/80">Python</span>
+                  <span className="text-white/80">AWS</span>
+                  <span className="text-orange-300">85%</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-white/80">PostgreSQL</span>
                   <span className="text-orange-300">90%</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-white/80">Docker</span>
+                  <span className="text-orange-300">80%</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-white/80">Terraform</span>
+                  <span className="text-orange-300">75%</span>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+              <h3 className="text-xl font-bold text-white mb-4">BI & Backend</h3>
+              <div className="space-y-2">
+                <div className="flex justify-between">
+                  <span className="text-white/80">Power BI</span>
+                  <span className="text-orange-300">85%</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-white/80">Flask</span>
                   <span className="text-orange-300">90%</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-white/80">PostgreSQL</span>
+                  <span className="text-white/80">FastAPI</span>
                   <span className="text-orange-300">85%</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-white/80">SQLAlchemy</span>
-                  <span className="text-orange-300">85%</span>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-              <h3 className="text-xl font-bold text-white mb-4">Tools & Others</h3>
-              <div className="space-y-2">
-                <div className="flex justify-between">
-                  <span className="text-white/80">Git</span>
-                  <span className="text-orange-300">90%</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-white/80">Docker</span>
-                  <span className="text-orange-300">75%</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-white/80">AWS</span>
-                  <span className="text-orange-300">70%</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-white/80">Figma</span>
+                  <span className="text-white/80">dbt</span>
                   <span className="text-orange-300">80%</span>
                 </div>
               </div>
@@ -285,13 +285,12 @@ const SimpleView: React.FC = () => {
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex flex-col md:flex-row items-center justify-between mb-8">
             <div className="text-white/60 mb-4 md:mb-0">
-              © 2025 Fidel Fúnez C. All rights reserved.
+              © 2026 Fidel Fúnez C. All rights reserved.
             </div>
             <div className="flex space-x-6">
               <a href="https://github.com/fidelfunez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">GitHub</a>
-              <a href="https://www.linkedin.com/in/fidel-funez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">LinkedIn</a>
               <a href="https://x.com/fidelfunez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">X</a>
-              <a href="mailto:fidel@paidin.io" className="text-white/60 hover:text-white transition-colors">Email</a>
+              <a href="mailto:fidelfunezf@gmail.com" className="text-white/60 hover:text-white transition-colors">Email</a>
             </div>
           </div>
           <div className="text-sm text-white/40">

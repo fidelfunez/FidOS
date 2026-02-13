@@ -8,7 +8,7 @@ interface LoginScreenProps {
 }
 
 const quote =
-  '"Chancellor on brink of second bailout for banks."\n— The Times, January 3rd, 2009.';
+  '"The best way to predict the future is to build it."\n— Alan Kay';
 
 const fontStack = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
 

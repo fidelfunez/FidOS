@@ -63,7 +63,7 @@ const AboutPage: React.FC = () => {
                     priority
                   />
                   <h2 className="text-2xl font-bold text-white mb-2">Fidel Fúnez C.</h2>
-                  <p className="text-white/60">Software Engineer</p>
+                  <p className="text-white/60">Data Engineer & Full-Stack Developer</p>
                 </div>
                 
                 <div className="space-y-6">
@@ -94,7 +94,7 @@ const AboutPage: React.FC = () => {
                     <div className="space-y-3">
                       <div className="flex items-center space-x-3">
                         <span className="text-white/60">📧</span>
-                        <a href="mailto:fidel@paidin.io" className="text-white hover:text-orange-300 transition-colors">fidel@paidin.io</a>
+                        <a href="mailto:fidelfunezf@gmail.com" className="text-white hover:text-orange-300 transition-colors">fidelfunezf@gmail.com</a>
                       </div>
                       <div className="flex items-center space-x-3">
                         <span className="text-white/60">📱</span>
@@ -111,7 +111,6 @@ const AboutPage: React.FC = () => {
                     <h3 className="text-lg font-semibold text-white mb-3">Social</h3>
                     <div className="flex space-x-4">
                       <a href="https://github.com/fidelfunez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">GitHub</a>
-                      <a href="https://www.linkedin.com/in/fidel-funez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">LinkedIn</a>
                       <a href="https://x.com/fidelfunez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">X</a>
                     </div>
                   </div>
@@ -298,13 +297,12 @@ const AboutPage: React.FC = () => {
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex flex-col md:flex-row items-center justify-between mb-8">
             <div className="text-white/60 mb-4 md:mb-0">
-              © 2025 Fidel Fúnez C. All rights reserved.
+              © 2026 Fidel Fúnez C. All rights reserved.
             </div>
             <div className="flex space-x-6">
               <a href="https://github.com/fidelfunez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">GitHub</a>
-              <a href="https://www.linkedin.com/in/fidel-funez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">LinkedIn</a>
               <a href="https://x.com/fidelfunez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">X</a>
-              <a href="mailto:fidel@paidin.io" className="text-white/60 hover:text-white transition-colors">Email</a>
+              <a href="mailto:fidelfunezf@gmail.com" className="text-white/60 hover:text-white transition-colors">Email</a>
             </div>
           </div>
           <div className="text-sm text-white/40">

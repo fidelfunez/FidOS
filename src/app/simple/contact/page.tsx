@@ -38,8 +38,8 @@ const ContactPage: React.FC = () => {
     {
       icon: "📧",
       title: "Email",
-      value: "fidel@paidin.io",
-      link: "mailto:fidel@paidin.io"
+      value: "fidelfunezf@gmail.com",
+      link: "mailto:fidelfunezf@gmail.com"
     },
     {
       icon: "📱",
@@ -73,12 +73,6 @@ const ContactPage: React.FC = () => {
       url: "https://github.com/fidelfunez",
       icon: "🐙",
       color: "hover:text-gray-400"
-    },
-    {
-      name: "LinkedIn",
-      url: "https://www.linkedin.com/in/fidel-funez",
-      icon: "💼",
-      color: "hover:text-blue-400"
     },
     {
       name: "X",
@@ -362,13 +356,12 @@ const ContactPage: React.FC = () => {
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex flex-col md:flex-row items-center justify-between mb-8">
             <div className="text-white/60 mb-4 md:mb-0">
-              © 2025 Fidel Fúnez C. All rights reserved.
+              © 2026 Fidel Fúnez C. All rights reserved.
             </div>
             <div className="flex space-x-6">
               <a href="https://github.com/fidelfunez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">GitHub</a>
-              <a href="https://www.linkedin.com/in/fidel-funez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">LinkedIn</a>
               <a href="https://x.com/fidelfunez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">X</a>
-              <a href="mailto:fidel@paidin.io" className="text-white/60 hover:text-white transition-colors">Email</a>
+              <a href="mailto:fidelfunezf@gmail.com" className="text-white/60 hover:text-white transition-colors">Email</a>
             </div>
           </div>
           <div className="text-sm text-white/40">
