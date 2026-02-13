@@ -97,40 +97,20 @@ I wanted a portfolio that actually showed what I can do, not just told you about
 - Responsive design thinking
 - And honestly, it's just more interesting than another Bootstrap template
 
-Plus, it's been a great conversation starter. People remember it.
-
-## Performance
-
-The simple view scores **98/100** on Lighthouse:
-- First Contentful Paint: 1.8s
-- Largest Contentful Paint: 1.8s
-- Total Blocking Time: 0ms
-- Cumulative Layout Shift: 0.000
-
-All images are WebP format, and the desktop version lazy-loads components to keep things snappy.
+Plus, it's been a great conversation starter. Most people remember it.
 
 ## Mobile Experience
 
 Mobile users automatically get the simple view. The desktop experience is built for... well, desktops. Trying to use it on a phone would be frustrating, so I redirect mobile users to the optimized simple version instead.
 
-## What's Next?
-
-I'm always tweaking things. Currently thinking about:
-- Adding more interactive apps
-- Improving animations
-- Maybe a dark/light mode toggle
-- Performance optimizations (always)
-
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License - Use it, fork it, build with it.
 
 ## Contact
 
 - **Website**: [fidelfunez.netlify.app](https://fidelfunez.netlify.app)
-- **Email**: fidel@paidin.io
-- **GitHub**: [@fidelfunez](https://github.com/fidelfunez)
-- **LinkedIn**: [fidel-funez](https://www.linkedin.com/in/fidel-funez)
+- **Email**: fidelfunezf@gmail.com
 - **X**: [@fidelfunez](https://x.com/fidelfunez)
 
 ---
