@@ -1,12 +1,12 @@
-# FidOS
+# FidOS - My Personal Portfolio
 
-A macOS-inspired portfolio website that's actually fun to use. Instead of the usual "here's my resume" approach, I built an interactive desktop experience where you can explore my work, projects, and background just like you'd navigate macOS.
+FidOS is a macOS-inspired portfolio website that's actually fun to use. Instead of the usual "here's my resume" approach, I built an interactive desktop and mobile experience where you can explore my work, projects, and background just like you'd navigate macOS.
 
 [**Live Demo**](https://fidelfunez.netlify.app) • [**Simple View**](https://fidelfunez.netlify.app/simple)
 
 ## What is this?
 
-FidOS is my portfolio, but it's also a fully functional macOS-style interface running in your browser. You can open folders, launch apps from the dock, drag windows around, and interact with everything just like you would on a Mac. It's part portfolio, part playground, and honestly, it was just fun to build.
+FidOS is my portfolio, but it's also a fully functional macOS-style interface running in your browser. You can open folders, launch apps from the dock, drag windows around, and interact with everything just like you would on a Mac. It's part portfolio, part sandbox/playground, and honestly, it was just fun to build.
 
 The project has two views:
 - **Desktop Version**: The full macOS experience (desktop only - mobile users get redirected)
@@ -63,7 +63,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-**First time?** You'll see a lock screen. The password is in the Notes app once you unlock (or just check the code, I'm not hiding it 😄).
+**First time?** You'll see a lock screen. The password is in the Notes app once you unlock (or just check the code, I'm not hiding it lol).
 
 ## Building for Production
 
@@ -97,33 +97,15 @@ I wanted a portfolio that actually showed what I can do, not just told you about
 - Responsive design thinking
 - And honestly, it's just more interesting than another Bootstrap template
 
-Plus, it's been a great conversation starter. People remember it.
-
-## Performance
-
-The simple view scores **98/100** on Lighthouse:
-- First Contentful Paint: 1.8s
-- Largest Contentful Paint: 1.8s
-- Total Blocking Time: 0ms
-- Cumulative Layout Shift: 0.000
-
-All images are WebP format, and the desktop version lazy-loads components to keep things snappy.
+Plus, it's been a great conversation starter. Most people remember it.
 
 ## Mobile Experience
 
 Mobile users automatically get the simple view. The desktop experience is built for... well, desktops. Trying to use it on a phone would be frustrating, so I redirect mobile users to the optimized simple version instead.
 
-## What's Next?
-
-I'm always tweaking things. Currently thinking about:
-- Adding more interactive apps
-- Improving animations
-- Maybe a dark/light mode toggle
-- Performance optimizations (always)
-
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License - Use it, fork it, build with it.
 
 ## Contact
 
@@ -134,4 +116,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Built with ❤️ (and probably too much coffee) by Fidel Fúnez C.
+Built with 🧡 (and probably too much coffee) for creativity, by Fidel Fúnez C.
