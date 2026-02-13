@@ -1,12 +1,12 @@
-# FidOS
+# FidOS - My Personal Portfolio
 
-A macOS-inspired portfolio website that's actually fun to use. Instead of the usual "here's my resume" approach, I built an interactive desktop experience where you can explore my work, projects, and background just like you'd navigate macOS.
+FidOS is a macOS-inspired portfolio website that's actually fun to use. Instead of the usual "here's my resume" approach, I built an interactive desktop and mobile experience where you can explore my work, projects, and background just like you'd navigate macOS.
 
 [**Live Demo**](https://fidelfunez.netlify.app) • [**Simple View**](https://fidelfunez.netlify.app/simple)
 
 ## What is this?
 
-FidOS is my portfolio, but it's also a fully functional macOS-style interface running in your browser. You can open folders, launch apps from the dock, drag windows around, and interact with everything just like you would on a Mac. It's part portfolio, part playground, and honestly, it was just fun to build.
+FidOS is my portfolio, but it's also a fully functional macOS-style interface running in your browser. You can open folders, launch apps from the dock, drag windows around, and interact with everything just like you would on a Mac. It's part portfolio, part sandbox/playground, and honestly, it was just fun to build.
 
 The project has two views:
 - **Desktop Version**: The full macOS experience (desktop only - mobile users get redirected)
@@ -135,4 +135,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Built with ❤️ (and probably too much coffee) by Fidel Fúnez C.
+Built with 🧡 (and probably too much coffee) for creativity, by Fidel Fúnez C.
