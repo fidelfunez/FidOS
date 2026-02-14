@@ -120,8 +120,8 @@ const ContactPage: React.FC = () => {
             Get In <span className="bg-gradient-to-r from-orange-300 to-amber-300 bg-clip-text text-transparent">Touch</span>
           </h1>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            I'm always excited to hear about new opportunities and interesting projects. 
-            Let's discuss how we can work together to bring your ideas to life.
+            I'm always excited to hear about data engineering opportunities and interesting projects. 
+            Let's discuss how we can work together to build reliable data systems.
           </p>
         </div>
       </section>
@@ -187,6 +187,7 @@ const ContactPage: React.FC = () => {
                     className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:border-orange-400 transition-colors"
                   >
                     <option value="">Select a subject</option>
+                    <option value="data-engineering-role">Data Engineering Role</option>
                     <option value="project-inquiry">Project Inquiry</option>
                     <option value="job-opportunity">Job Opportunity</option>
                     <option value="collaboration">Collaboration</option>
@@ -272,7 +273,7 @@ const ContactPage: React.FC = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-white/70">Status:</span>
-                    <span className="text-green-400 font-semibold">Available for new projects</span>
+                    <span className="text-green-400 font-semibold">Open to data engineering roles</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-white/70">Response Time:</span>
@@ -295,37 +296,39 @@ const ContactPage: React.FC = () => {
           <h2 className="text-3xl font-bold text-white mb-12 text-center">Frequently Asked Questions</h2>
           <div className="space-y-6">
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-              <h3 className="text-xl font-bold text-white mb-3">What types of projects do you work on?</h3>
+              <h3 className="text-xl font-bold text-white mb-3">What types of data work do you specialize in?</h3>
               <p className="text-white/70 leading-relaxed">
-                I specialize in full-stack web development, including e-commerce platforms, SaaS applications, 
-                portfolio websites, and custom business solutions. I'm also experienced with mobile app development 
-                and API integrations.
+                I specialize in data engineering: ETL pipelines, data modeling, cloud data platforms (AWS), 
+                and BI dashboards. I build reporting workflows, design analytics-ready data models, and ensure 
+                data integrity across systems. I also have full-stack experience for applications that need 
+                backend APIs and data integrations.
               </p>
             </div>
             
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <h3 className="text-xl font-bold text-white mb-3">What's your typical project timeline?</h3>
               <p className="text-white/70 leading-relaxed">
-                Project timelines vary depending on complexity and scope. A simple website might take 2-4 weeks, 
-                while a complex web application could take 2-3 months. I always provide detailed timelines during 
-                the initial consultation.
+                Timelines vary by scope. A dashboard or reporting pipeline might take 2–4 weeks, while an 
+                enterprise data platform could take 2–3 months. I always provide detailed timelines during 
+                the initial consultation and keep stakeholders updated throughout.
               </p>
             </div>
             
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-              <h3 className="text-xl font-bold text-white mb-3">Do you work with clients internationally?</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Do you work with teams internationally?</h3>
               <p className="text-white/70 leading-relaxed">
-                Yes! I work remotely with clients from around the world. I'm comfortable with different time zones 
-                and use modern collaboration tools to ensure smooth communication throughout the project.
+                Yes! I work remotely with teams across the US and Latin America. I'm based in CST and fluent in 
+                English and Spanish. I'm experienced with distributed teams and use modern collaboration tools 
+                to ensure smooth communication.
               </p>
             </div>
             
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-              <h3 className="text-xl font-bold text-white mb-3">What's included in your development process?</h3>
+              <h3 className="text-xl font-bold text-white mb-3">What's included in your data engineering process?</h3>
               <p className="text-white/70 leading-relaxed">
-                My process includes initial consultation, project planning, design mockups, development phases, 
-                testing, deployment, and post-launch support. I maintain clear communication throughout and provide 
-                regular updates on progress.
+                My process includes requirements gathering, data modeling, pipeline design and development, 
+                data quality checks, orchestration (e.g., Airflow), and documentation. I emphasize data 
+                integrity, reconciliation, and stakeholder-driven solutions, with regular updates on progress.
               </p>
             </div>
           </div>
@@ -335,10 +338,10 @@ const ContactPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">Ready to Build Your Data Systems?</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Let's discuss your ideas and create something amazing together. 
-            I'm here to help bring your vision to life.
+            Let's discuss your data needs—pipelines, dashboards, or platforms. 
+            I'm here to help bring your data initiatives to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#contact-form" className="px-8 py-4 bg-gradient-to-r from-orange-600 to-amber-600 text-white font-semibold rounded-lg hover:from-orange-700 hover:to-amber-700 transition-all transform hover:scale-105">

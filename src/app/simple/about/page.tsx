@@ -41,7 +41,7 @@ const AboutPage: React.FC = () => {
             About <span className="bg-gradient-to-r from-orange-300 to-amber-300 bg-clip-text text-transparent">Me</span>
           </h1>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Get to know more about my journey, passion for technology, and what drives me to create exceptional digital experiences.
+            Get to know more about my journey from data operations to data engineering, and what drives me to build reliable data systems.
           </p>
         </div>
       </section>
@@ -130,16 +130,16 @@ const AboutPage: React.FC = () => {
                     gave me a deep understanding of how data flows through organizations and the importance of data integrity.
                   </p>
                   <p>
-                    Over the past 6+ years, I've evolved from data operations to full-stack software engineering, working 
+                    Over the past 6+ years, I've evolved from data operations to data engineering, working 
                     with diverse teams across various industries. From HR systems and recruiting platforms to building 
-                    Bitcoin-native payroll solutions and enterprise cloud data platforms, each project has taught me 
-                    something new about problem-solving, system design, and the ever-evolving landscape of web technologies.
+                    enterprise cloud data platforms and ETL pipelines, each project has taught me 
+                    something new about data modeling, pipeline design, and the importance of data integrity at scale.
                   </p>
                   <p>
-                    I believe that great software is built on a foundation of clean code, thoughtful system design, and a deep 
-                    understanding of user needs. My approach combines technical expertise with product-focused thinking, 
-                    always striving to deliver solutions that are both elegant and functional, with an emphasis on reliability 
-                    and scalability.
+                    I believe that great data systems are built on a foundation of clean pipelines, thoughtful data modeling, and a deep 
+                    understanding of stakeholder needs. My approach combines technical expertise with product-focused thinking, 
+                    always striving to deliver solutions that are reliable, scalable, and actionable—with an emphasis on data 
+                    integrity and reconciliation.
                   </p>
                 </div>
               </div>
@@ -151,12 +151,12 @@ const AboutPage: React.FC = () => {
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
                     <div className="flex justify-between items-start mb-3">
                       <h3 className="text-xl font-semibold text-white">Computer Science Engineer</h3>
-                      <span className="text-white/60 text-sm">2019 - 2022</span>
+                      <span className="text-white/60 text-sm">2018 - 2022</span>
                     </div>
                     <p className="text-orange-300 font-medium mb-2">Universidad Tecnológica de Honduras (UTH)</p>
                     <p className="text-white/70">
-                      Focused on software engineering, algorithms, and web development. Developed strong foundation 
-                      in system design and development methodologies.
+                      Focused on software engineering, algorithms, and data structures. Developed strong foundation 
+                      in system design and development methodologies. Graduated Cum Laude.
                     </p>
                   </div>
                   
@@ -179,60 +179,60 @@ const AboutPage: React.FC = () => {
                 <h2 className="text-3xl font-bold text-white mb-6">Technical Skills</h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                    <h3 className="text-xl font-semibold text-white mb-4">Frontend Development</h3>
+                    <h3 className="text-xl font-semibold text-white mb-4">Data & ETL</h3>
                     <div className="space-y-3">
                       <div className="flex justify-between items-center">
-                        <span className="text-white/80">React & Next.js</span>
+                        <span className="text-white/80">Python & Pandas</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
                           <div className="bg-orange-400 h-2 rounded-full" style={{width: '95%'}}></div>
                         </div>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-white/80">TypeScript</span>
+                        <span className="text-white/80">SQL</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
-                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '90%'}}></div>
+                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '95%'}}></div>
                         </div>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-white/80">Tailwind CSS</span>
-                        <div className="w-24 bg-white/20 rounded-full h-2">
-                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '90%'}}></div>
-                        </div>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-white/80">FastAPI</span>
+                        <span className="text-white/80">Apache Spark</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
                           <div className="bg-orange-400 h-2 rounded-full" style={{width: '80%'}}></div>
+                        </div>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-white/80">dbt & Airflow</span>
+                        <div className="w-24 bg-white/20 rounded-full h-2">
+                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '85%'}}></div>
                         </div>
                       </div>
                     </div>
                   </div>
 
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                    <h3 className="text-xl font-semibold text-white mb-4">Backend Development</h3>
+                    <h3 className="text-xl font-semibold text-white mb-4">Cloud & Backend</h3>
                     <div className="space-y-3">
                       <div className="flex justify-between items-center">
-                        <span className="text-white/80">Python & Flask</span>
+                        <span className="text-white/80">AWS (Glue, Redshift, S3)</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
-                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '90%'}}></div>
+                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '85%'}}></div>
                         </div>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-white/80">PostgreSQL</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
-                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '85%'}}></div>
+                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '90%'}}></div>
                         </div>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-white/80">SQLAlchemy</span>
-                        <div className="w-24 bg-white/20 rounded-full h-2">
-                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '85%'}}></div>
-                        </div>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-white/80">RESTful APIs</span>
+                        <span className="text-white/80">Flask & FastAPI</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
                           <div className="bg-orange-400 h-2 rounded-full" style={{width: '90%'}}></div>
+                        </div>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-white/80">Terraform & Docker</span>
+                        <div className="w-24 bg-white/20 rounded-full h-2">
+                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '80%'}}></div>
                         </div>
                       </div>
                     </div>
@@ -248,9 +248,9 @@ const AboutPage: React.FC = () => {
                     <h3 className="text-xl font-semibold text-white mb-4">Technology</h3>
                     <ul className="space-y-2 text-white/80">
                       <li>• Open source contribution</li>
-                      <li>• Learning new frameworks</li>
-                      <li>• Bitcoin conferences & meetups</li>
-                      <li>• Reading FinTech blogs</li>
+                      <li>• Data engineering & analytics</li>
+                      <li>• Cloud architecture & IaC</li>
+                      <li>• Data visualization & BI</li>
                     </ul>
                   </div>
                   

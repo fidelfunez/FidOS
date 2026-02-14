@@ -5,95 +5,71 @@ const ExperiencePage: React.FC = () => {
   const experiences = [
     {
       id: 1,
-      title: "Software Engineer",
-      company: "Freelance",
-      location: "Tegucigalpa, Honduras",
-      period: "2022 - Present",
-      description: "Designed, built, and maintained production-ready web applications with a strong focus on backend APIs and system design.",
+      title: "Data & Systems Engineer",
+      company: "Relay Human Cloud",
+      location: "Remote",
+      period: "2024 – Present",
+      description: "Design and implement internal data tracking systems, reporting pipelines, and production-ready web applications with focus on backend APIs, data models, and system architecture.",
       achievements: [
-        "Developed RESTful services using Python (Flask) and SQLAlchemy, implementing authentication, authorization, and business logic",
+        "Designed and implemented internal data tracking systems to support operational and financial workflows",
+        "Built dashboards and reporting pipelines to visualize program performance, adoption metrics, and financial KPIs",
+        "Led merchant data integration efforts, ensuring consistency and data integrity across multiple systems",
+        "Developed RESTful services using Python (Flask) and SQLAlchemy with authentication, authorization, and business logic layers",
         "Designed relational database schemas and wrote optimized SQL queries to support scalable application features",
-        "Integrated third-party services such as payment providers, authentication services, and external APIs",
-        "Owned features end-to-end, from initial design through deployment and ongoing improvements"
+        "Integrated third-party services including payment providers, authentication services, and external data APIs",
+        "Collaborated with stakeholders to gather requirements, troubleshoot data issues, and deliver features iteratively"
       ],
-      technologies: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "React", "TypeScript", "RESTful APIs"],
-      type: "Freelance"
+      technologies: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "Data Pipelines", "Dashboards", "RESTful APIs"],
+      type: "Full-time"
     },
     {
       id: 2,
-      title: "Software & Systems Analyst",
-      company: "AmityAge Academy",
-      location: "Roatán, Honduras",
-      period: "2024 - 2025",
-      description: "Designed and implemented internal data tracking systems to support operational and financial workflows.",
+      title: "Data Engineer",
+      company: "Boxer Property Management",
+      location: "Remote (US Company, LATAM-based)",
+      period: "2023 – 2024",
+      description: "Managed and optimized data pipelines supporting recruiting operations, integrating ATS/CRM tools and ensuring data compliance across client organizations.",
       achievements: [
-        "Led analytics and reporting initiatives, building dashboards to visualize program performance and adoption metrics",
-        "Coordinated merchant data integration efforts, ensuring consistency and data integrity across systems",
-        "Worked closely with stakeholders to translate operational needs into technical solutions"
+        "Managed and optimized data pipelines supporting recruiting operations, integrating ATS/CRM tools (Bullhorn, etc.)",
+        "Assisted with system transitions and ETL process improvements for payroll and benefits workflows",
+        "Ensured data compliance and governance across client organizations, maintaining high data quality standards",
+        "Analyzed and visualized recruitment metrics to identify pipeline bottlenecks and improve hiring funnel efficiency",
+        "Collaborated with data and reporting teams to monitor KPIs and deliver actionable insights to stakeholders"
       ],
-      technologies: ["Data Analytics", "Reporting", "System Integration", "Data Visualization"],
+      technologies: ["Data Pipelines", "ATS/CRM", "ETL", "Power BI", "Data Governance"],
       type: "Full-time"
     },
     {
       id: 3,
-      title: "Systems Analyst (Recruiting Platforms)",
-      company: "Connected Health Care",
-      location: "Austin, TX",
-      period: "2023 - 2024",
-      description: "Managed and optimized internal systems and data pipelines supporting recruiting operations.",
+      title: "Systems Engineer (HR Data)",
+      company: "Boxer Property Management",
+      location: "Remote (US Company, LATAM-based)",
+      period: "2021 – 2023",
+      description: "Maintained and optimized internal HR databases supporting enterprise compliance and reporting workflows for 500+ employees.",
       achievements: [
-        "Integrated ATS/CRM tools to improve data flow and recruitment efficiency",
-        "Ensured robust data compliance and governance across client organizations by leveraging internal HR data platforms",
-        "Collaborated effectively with data and reporting teams to monitor key recruitment metrics and hiring funnel KPIs",
-        "Analyzed and visualized recruitment metrics to identify bottlenecks and improve overall pipeline efficiency"
+        "Maintained and optimized internal HR databases supporting enterprise compliance and reporting workflows",
+        "Ensured data accuracy, integrity, and consistency across internal platforms serving 500+ employees",
+        "Collaborated with IT and reporting teams to improve system reliability and data accessibility",
+        "Analyzed operational data to identify process inefficiencies and support data-driven improvements"
       ],
-      technologies: ["ATS/CRM Integration", "Data Pipelines", "HR Systems", "Data Analytics"],
+      technologies: ["HR Systems", "Database Management", "Data Integrity", "Reporting"],
       type: "Full-time"
     },
     {
       id: 4,
-      title: "HR Systems Analyst",
-      company: "Boxer Property Management",
-      location: "Houston, TX",
-      period: "2021 - 2023",
-      description: "Maintained and optimized internal HR systems and databases supporting compliance and reporting workflows.",
-      achievements: [
-        "Ensured data accuracy, integrity, and consistency across internal platforms",
-        "Collaborated with IT and reporting teams to improve system reliability and data accessibility",
-        "Analyzed operational data to identify inefficiencies and support process improvements"
-      ],
-      technologies: ["HR Systems", "Database Management", "Data Analysis", "Reporting"],
-      type: "Full-time"
-    },
-    {
-      id: 5,
       title: "Data Operations Analyst",
       company: "Agero, Inc.",
-      location: "Remote (LATAM)",
-      period: "2020 - 2021",
-      description: "Administered complex payroll systems, prioritizing data integrity and regulatory compliance.",
+      location: "Remote (US Company, LATAM-based)",
+      period: "2018 – 2021",
+      description: "Administered complex payroll systems processing data for 1,000+ employees, prioritizing data integrity and regulatory compliance.",
       achievements: [
-        "Managed sensitive employee datasets and implemented robust data validation steps during processing",
-        "Assisted with system transitions and improvements to payroll and benefits workflows",
-        "Collaborated with finance to reconcile monthly payroll reports, ensuring clean data handoffs"
+        "Administered complex payroll systems processing data for 1,000+ employees, prioritizing data integrity and regulatory compliance",
+        "Managed sensitive datasets and implemented robust data validation steps, enhancing data quality and security",
+        "Collaborated with finance to ensure clean data handoffs for accounting and audit",
+        "Maintained and optimized HR databases through automation and systematic data cleanup initiatives",
+        "Developed custom Excel reports and dashboards for leadership using advanced functions to surface employee trends"
       ],
-      technologies: ["Payroll Systems", "Data Validation", "ETL Processes", "Financial Reporting"],
-      type: "Full-time"
-    },
-    {
-      id: 6,
-      title: "Junior Data Operations Analyst",
-      company: "Agero, Inc.",
-      location: "Remote (LATAM)",
-      period: "2018 - 2020",
-      description: "Maintained and optimized HR databases, significantly improving data accuracy and integrity.",
-      achievements: [
-        "Improved data accuracy and integrity through automation and systematic data cleanup initiatives",
-        "Supported IT in critical cross-team data-related initiatives, including data migrations and reporting",
-        "Managed onboarding and offboarding systems, contributing to the development of structured data pipelines",
-        "Developed custom Excel reports and dashboards for leadership, utilizing advanced functions to summarize employee trends"
-      ],
-      technologies: ["Database Management", "Data Automation", "Excel", "Reporting"],
+      technologies: ["Payroll Systems", "Data Validation", "ETL", "Excel", "Data Governance"],
       type: "Full-time"
     }
   ];
@@ -101,10 +77,10 @@ const ExperiencePage: React.FC = () => {
   const education = [
     {
       id: 1,
-      degree: "Computer Science Engineer",
+      degree: "B.S. Computer Science Engineering (Cum Laude)",
       school: "Universidad Tecnológica de Honduras (UTH)",
-      period: "2019 - 2022",
-      description: "Focused on software engineering, algorithms, and web development.",
+      period: "2018 - 2022",
+      description: "Focused on software engineering, algorithms, and data structures.",
       achievements: [
         "Completed comprehensive coursework in computer science fundamentals",
         "Developed strong foundation in software engineering principles",
@@ -128,10 +104,17 @@ const ExperiencePage: React.FC = () => {
   const certifications = [
     {
       id: 1,
+      name: "Finance Certification",
+      issuer: "Relay Human Cloud",
+      date: "2024",
+      description: "Completed certification covering macroeconomic indicators including GDP, inflation, and fiscal policy."
+    },
+    {
+      id: 2,
       name: "Technical Skills",
       issuer: "Self-Taught & Professional Experience",
       date: "2018 - Present",
-      description: "Languages: Python, SQL, Bash. Backend & APIs: Flask, FastAPI, RESTful API design, authentication (JWT), relational data modeling. Frontend: React, TypeScript, Tailwind CSS. Databases: PostgreSQL, SQLAlchemy. Cloud & DevOps: AWS (S3, Glue, Athena, Redshift), Docker, Git."
+      description: "Languages: Python, SQL, Bash, TypeScript. Data & ETL: Pandas, Spark, dbt, Airflow, data modeling, reconciliation. Cloud: AWS (S3, Glue, Athena, Redshift, Kinesis), Terraform, Docker. Databases: PostgreSQL, SQLAlchemy, Redshift. BI: Power BI, Tableau. Backend: Flask, FastAPI, RESTful APIs."
     }
   ];
 
@@ -173,7 +156,7 @@ const ExperiencePage: React.FC = () => {
             Work <span className="bg-gradient-to-r from-orange-300 to-amber-300 bg-clip-text text-transparent">Experience</span>
           </h1>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            My professional journey from data operations to software engineering, building production-ready platforms and systems.
+            My professional journey from data operations to data engineering, building reliable data systems, ETL pipelines, and analytics platforms.
           </p>
         </div>
       </section>
@@ -298,17 +281,17 @@ const ExperiencePage: React.FC = () => {
               <div className="relative flex items-center">
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full border-4 border-white"></div>
                 <div className="w-5/12 pr-8 text-right">
-                  <h3 className="text-xl font-bold text-white mb-2">2022 - Present</h3>
-                  <p className="text-white/80">Software Engineering</p>
+                  <h3 className="text-xl font-bold text-white mb-2">2024 - Present</h3>
+                  <p className="text-white/80">Data & Systems Engineering</p>
                   <div className="mt-3">
                     <span className="px-3 py-1 bg-orange-600/20 text-orange-300 text-sm rounded-full mr-2">Python</span>
                     <span className="px-3 py-1 bg-orange-600/20 text-orange-300 text-sm rounded-full mr-2">Flask</span>
-                    <span className="px-3 py-1 bg-orange-600/20 text-orange-300 text-sm rounded-full">React</span>
+                    <span className="px-3 py-1 bg-orange-600/20 text-orange-300 text-sm rounded-full">AWS</span>
                   </div>
                 </div>
                 <div className="w-5/12 pl-8">
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                    <p className="text-white/70">Building production-ready web platforms, designing backend systems, integrating third-party services</p>
+                    <p className="text-white/70">Building data tracking systems, reporting pipelines, dashboards, and production-ready backend APIs</p>
                   </div>
                 </div>
               </div>
@@ -317,16 +300,16 @@ const ExperiencePage: React.FC = () => {
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-amber-500 rounded-full border-4 border-white"></div>
                 <div className="w-5/12 pr-8 text-right">
                   <h3 className="text-xl font-bold text-white mb-2">2021 - 2024</h3>
-                  <p className="text-white/80">Systems & Data Analysis</p>
+                  <p className="text-white/80">Data Engineering & Systems</p>
                   <div className="mt-3">
-                    <span className="px-3 py-1 bg-amber-600/20 text-amber-300 text-sm rounded-full mr-2">Data Analytics</span>
-                    <span className="px-3 py-1 bg-amber-600/20 text-amber-300 text-sm rounded-full mr-2">HR Systems</span>
-                    <span className="px-3 py-1 bg-amber-600/20 text-amber-300 text-sm rounded-full">Reporting</span>
+                    <span className="px-3 py-1 bg-amber-600/20 text-amber-300 text-sm rounded-full mr-2">Data Pipelines</span>
+                    <span className="px-3 py-1 bg-amber-600/20 text-amber-300 text-sm rounded-full mr-2">ETL</span>
+                    <span className="px-3 py-1 bg-amber-600/20 text-amber-300 text-sm rounded-full">Power BI</span>
                   </div>
                 </div>
                 <div className="w-5/12 pl-8">
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                    <p className="text-white/70">Optimizing internal systems, ensuring data integrity, building dashboards and analytics</p>
+                    <p className="text-white/70">Optimizing data pipelines, ensuring data integrity, building dashboards and analytics for stakeholders</p>
                   </div>
                 </div>
               </div>
@@ -339,12 +322,12 @@ const ExperiencePage: React.FC = () => {
                   <div className="mt-3">
                     <span className="px-3 py-1 bg-orange-500/20 text-orange-300 text-sm rounded-full mr-2">Database Management</span>
                     <span className="px-3 py-1 bg-orange-500/20 text-orange-300 text-sm rounded-full mr-2">Data Validation</span>
-                    <span className="px-3 py-1 bg-orange-500/20 text-orange-300 text-sm rounded-full">ETL Processes</span>
+                    <span className="px-3 py-1 bg-orange-500/20 text-orange-300 text-sm rounded-full">ETL</span>
                   </div>
                 </div>
                 <div className="w-5/12 pl-8">
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                    <p className="text-white/70">Maintaining HR databases, improving data accuracy, developing automated reporting systems</p>
+                    <p className="text-white/70">Administering payroll systems, maintaining HR databases, implementing data validation and reporting</p>
                   </div>
                 </div>
               </div>
@@ -358,7 +341,7 @@ const ExperiencePage: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Work Together?</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            With 6+ years of experience building modern web applications, I'm ready to help bring your ideas to life.
+            With 6+ years of experience building data systems and ETL pipelines, I'm ready to help bring your data initiatives to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/simple/contact" className="px-8 py-4 bg-gradient-to-r from-orange-600 to-amber-600 text-white font-semibold rounded-lg hover:from-orange-700 hover:to-amber-700 transition-all transform hover:scale-105">
