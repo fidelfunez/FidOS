@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { fetchPublicRepos, type Project } from '@/lib/github';
+import SimpleLayout from '@/components/simple/SimpleLayout';
 
 const ProjectsPage: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -30,52 +31,13 @@ const ProjectsPage: React.FC = () => {
   const featuredProjects = projects.filter((p) => p.featured);
 
   return (
-    <div
-      className="min-h-screen bg-gradient-to-br from-slate-900 via-orange-900 to-slate-900"
-      style={{
-        background: 'linear-gradient(135deg, #0f172a 0%, #c2410c 50%, #0f172a 100%)',
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-      }}
-    >
-      {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-8">
-            <a href="/simple" className="text-xl font-bold text-white">
-              Fidel Fúnez C.
-            </a>
-            <div className="hidden md:flex space-x-6">
-              <a href="/simple/about" className="text-white/80 hover:text-white transition-colors">
-                About
-              </a>
-              <a href="/simple/projects" className="text-white hover:text-orange-300 transition-colors">
-                Projects
-              </a>
-              <a href="/simple/experience" className="text-white/80 hover:text-white transition-colors">
-                Experience
-              </a>
-              <a href="/simple/contact" className="text-white/80 hover:text-white transition-colors">
-                Contact
-              </a>
-            </div>
-          </div>
-          <div className="flex items-center space-x-4">
-            <a
-              href="/dashboard"
-              className="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-colors border border-white/20"
-            >
-              Try FidOS
-            </a>
-          </div>
-        </div>
-      </nav>
-
+    <SimpleLayout activePage="projects">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             My{' '}
-            <span className="bg-gradient-to-r from-orange-300 to-amber-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-300 to-cyan-300 bg-clip-text text-transparent">
               Projects
             </span>
           </h1>
@@ -111,7 +73,7 @@ const ProjectsPage: React.FC = () => {
       {loading && (
         <section className="py-20 px-6">
           <div className="max-w-6xl mx-auto text-center">
-            <div className="inline-block w-12 h-12 border-4 border-orange-400 border-t-transparent rounded-full animate-spin mb-4" />
+            <div className="inline-block w-12 h-12 border-4 border-blue-400 border-t-transparent rounded-full animate-spin mb-4" />
             <p className="text-white/80">Loading projects from GitHub...</p>
           </div>
         </section>
@@ -128,7 +90,7 @@ const ProjectsPage: React.FC = () => {
                 href="https://github.com/fidelfunez?tab=repositories"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-orange-300 hover:text-orange-200"
+                className="text-blue-300 hover:text-blue-200"
               >
                 GitHub
               </a>
@@ -149,7 +111,7 @@ const ProjectsPage: React.FC = () => {
                   key={project.id}
                   className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all group"
                 >
-                  <div className="h-64 bg-gradient-to-br from-orange-600 to-amber-600 flex items-center justify-center relative overflow-hidden">
+                  <div className="h-64 bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center relative overflow-hidden">
                     <div className="text-6xl">🚀</div>
                     <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                       <div className="flex space-x-4">
@@ -184,7 +146,7 @@ const ProjectsPage: React.FC = () => {
                       {project.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 bg-orange-600/20 text-orange-300 text-sm rounded-full"
+                          className="px-3 py-1 bg-blue-600/20 text-blue-300 text-sm rounded-full"
                         >
                           {tech}
                         </span>
@@ -196,7 +158,7 @@ const ProjectsPage: React.FC = () => {
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-orange-300 hover:text-orange-200 font-semibold"
+                          className="text-blue-300 hover:text-blue-200 font-semibold"
                         >
                           View Live →
                         </a>
@@ -232,7 +194,7 @@ const ProjectsPage: React.FC = () => {
                     key={project.id}
                     className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all group"
                   >
-                    <div className="h-48 bg-gradient-to-br from-orange-600 to-amber-600 flex items-center justify-center relative overflow-hidden">
+                    <div className="h-48 bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center relative overflow-hidden">
                       <div className="text-4xl">💻</div>
                       <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <div className="flex space-x-2">
@@ -269,7 +231,7 @@ const ProjectsPage: React.FC = () => {
                         {project.technologies.slice(0, 3).map((tech) => (
                           <span
                             key={tech}
-                            className="px-2 py-1 bg-orange-600/20 text-orange-300 text-xs rounded-full"
+                            className="px-2 py-1 bg-blue-600/20 text-blue-300 text-xs rounded-full"
                           >
                             {tech}
                           </span>
@@ -286,7 +248,7 @@ const ProjectsPage: React.FC = () => {
                             href={project.liveUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-orange-300 hover:text-orange-200 text-sm font-semibold"
+                            className="text-blue-300 hover:text-blue-200 text-sm font-semibold"
                           >
                             Live Demo →
                           </a>
@@ -346,7 +308,7 @@ const ProjectsPage: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/simple/contact"
-              className="px-8 py-4 bg-gradient-to-r from-orange-600 to-amber-600 text-white font-semibold rounded-lg hover:from-orange-700 hover:to-amber-700 transition-all transform hover:scale-105"
+              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all transform hover:scale-105"
             >
               Start a Project
             </a>
@@ -359,38 +321,7 @@ const ProjectsPage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="py-12 px-6 border-t border-white/10">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-            <div className="text-white/60 mb-4 md:mb-0">© 2026 Fidel Fúnez C. All rights reserved.</div>
-            <div className="flex space-x-6">
-              <a
-                href="https://github.com/fidelfunez"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/60 hover:text-white transition-colors"
-              >
-                GitHub
-              </a>
-              <a
-                href="https://x.com/fidelfunez"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/60 hover:text-white transition-colors"
-              >
-                X
-              </a>
-              <a href="mailto:fidelfunezf@gmail.com" className="text-white/60 hover:text-white transition-colors">
-                Email
-              </a>
-            </div>
-          </div>
-          <div className="text-sm text-white/40">Built with Next.js, TypeScript, and Tailwind CSS</div>
-        </div>
-      </footer>
-    </div>
+    </SimpleLayout>
   );
 };
 

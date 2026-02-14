@@ -1,44 +1,16 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
+import SimpleLayout from '@/components/simple/SimpleLayout';
 
 const AboutPage: React.FC = () => {
   return (
-    <div
-      className="min-h-screen bg-gradient-to-br from-slate-900 via-orange-900 to-slate-900"
-      style={{
-        background: 'linear-gradient(135deg, #0f172a 0%, #c2410c 50%, #0f172a 100%)',
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
-      }}
-    >
-      {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-8">
-            <a href="/simple" className="text-xl font-bold text-white">Fidel Fúnez C.</a>
-            <div className="hidden md:flex space-x-6">
-              <a href="/simple/about" className="text-white hover:text-orange-300 transition-colors">About</a>
-              <a href="/simple/projects" className="text-white/80 hover:text-white transition-colors">Projects</a>
-              <a href="/simple/experience" className="text-white/80 hover:text-white transition-colors">Experience</a>
-              <a href="/simple/contact" className="text-white/80 hover:text-white transition-colors">Contact</a>
-            </div>
-          </div>
-          <div className="flex items-center space-x-4">
-            <a 
-              href="/dashboard" 
-              className="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-colors border border-white/20"
-            >
-              Try FidOS
-            </a>
-          </div>
-        </div>
-      </nav>
-
+    <SimpleLayout activePage="about">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            About <span className="bg-gradient-to-r from-orange-300 to-amber-300 bg-clip-text text-transparent">Me</span>
+            About <span className="bg-gradient-to-r from-blue-300 to-cyan-300 bg-clip-text text-transparent">Me</span>
           </h1>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
             Get to know more about my journey from data operations to data engineering, and what drives me to build reliable data systems.
@@ -94,15 +66,15 @@ const AboutPage: React.FC = () => {
                     <div className="space-y-3">
                       <div className="flex items-center space-x-3">
                         <span className="text-white/60">📧</span>
-                        <a href="mailto:fidelfunezf@gmail.com" className="text-white hover:text-orange-300 transition-colors">fidelfunezf@gmail.com</a>
+                        <a href="mailto:fidelfunezf@gmail.com" className="text-white hover:text-blue-300 transition-colors">fidelfunezf@gmail.com</a>
                       </div>
                       <div className="flex items-center space-x-3">
                         <span className="text-white/60">📱</span>
-                        <a href="tel:+12815417279" className="text-white hover:text-orange-300 transition-colors">+1 (281) 541-7279</a>
+                        <a href="tel:+12815417279" className="text-white hover:text-blue-300 transition-colors">+1 (281) 541-7279</a>
                       </div>
                       <div className="flex items-center space-x-3">
                         <span className="text-white/60">🌐</span>
-                        <a href="https://fidelfunez.netlify.app" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-300 transition-colors">fidelfunez.netlify.app</a>
+                        <a href="https://fidelfunez.netlify.app" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 transition-colors">fidelfunez.netlify.app</a>
                       </div>
                     </div>
                   </div>
@@ -153,7 +125,7 @@ const AboutPage: React.FC = () => {
                       <h3 className="text-xl font-semibold text-white">Computer Science Engineer</h3>
                       <span className="text-white/60 text-sm">2018 - 2022</span>
                     </div>
-                    <p className="text-orange-300 font-medium mb-2">Universidad Tecnológica de Honduras (UTH)</p>
+                    <p className="text-blue-300 font-medium mb-2">Universidad Tecnológica de Honduras (UTH)</p>
                     <p className="text-white/70">
                       Focused on software engineering, algorithms, and data structures. Developed strong foundation 
                       in system design and development methodologies. Graduated Cum Laude.
@@ -165,7 +137,7 @@ const AboutPage: React.FC = () => {
                       <h3 className="text-xl font-semibold text-white">Computer Science</h3>
                       <span className="text-white/60 text-sm">2017 - 2019</span>
                     </div>
-                    <p className="text-orange-300 font-medium mb-2">Universidad Privada de San Pedro Sula (USAP)</p>
+                    <p className="text-blue-300 font-medium mb-2">Universidad Privada de San Pedro Sula (USAP)</p>
                     <p className="text-white/70">
                       Early foundation in computer science principles and programming fundamentals. Established core 
                       understanding of computer science concepts and developed programming skills.
@@ -184,25 +156,25 @@ const AboutPage: React.FC = () => {
                       <div className="flex justify-between items-center">
                         <span className="text-white/80">Python & Pandas</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
-                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '95%'}}></div>
+                          <div className="bg-blue-400 h-2 rounded-full" style={{width: '95%'}}></div>
                         </div>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-white/80">SQL</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
-                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '95%'}}></div>
+                          <div className="bg-blue-400 h-2 rounded-full" style={{width: '95%'}}></div>
                         </div>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-white/80">Apache Spark</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
-                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '80%'}}></div>
+                          <div className="bg-blue-400 h-2 rounded-full" style={{width: '80%'}}></div>
                         </div>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-white/80">dbt & Airflow</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
-                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '85%'}}></div>
+                          <div className="bg-blue-400 h-2 rounded-full" style={{width: '85%'}}></div>
                         </div>
                       </div>
                     </div>
@@ -214,25 +186,25 @@ const AboutPage: React.FC = () => {
                       <div className="flex justify-between items-center">
                         <span className="text-white/80">AWS (Glue, Redshift, S3)</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
-                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '85%'}}></div>
+                          <div className="bg-blue-400 h-2 rounded-full" style={{width: '85%'}}></div>
                         </div>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-white/80">PostgreSQL</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
-                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '90%'}}></div>
+                          <div className="bg-blue-400 h-2 rounded-full" style={{width: '90%'}}></div>
                         </div>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-white/80">Flask & FastAPI</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
-                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '90%'}}></div>
+                          <div className="bg-blue-400 h-2 rounded-full" style={{width: '90%'}}></div>
                         </div>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-white/80">Terraform & Docker</span>
                         <div className="w-24 bg-white/20 rounded-full h-2">
-                          <div className="bg-orange-400 h-2 rounded-full" style={{width: '80%'}}></div>
+                          <div className="bg-blue-400 h-2 rounded-full" style={{width: '80%'}}></div>
                         </div>
                       </div>
                     </div>
@@ -291,26 +263,7 @@ const AboutPage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="py-12 px-6 border-t border-white/10">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-            <div className="text-white/60 mb-4 md:mb-0">
-              © 2026 Fidel Fúnez C. All rights reserved.
-            </div>
-            <div className="flex space-x-6">
-              <a href="https://github.com/fidelfunez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">GitHub</a>
-              <a href="https://x.com/fidelfunez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">X</a>
-              <a href="mailto:fidelfunezf@gmail.com" className="text-white/60 hover:text-white transition-colors">Email</a>
-            </div>
-          </div>
-          <div className="text-sm text-white/40">
-            Built with Next.js, TypeScript, and Tailwind CSS
-          </div>
-        </div>
-      </footer>
-    </div>
+    </SimpleLayout>
   );
 };
 

@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import SimpleLayout from '@/components/simple/SimpleLayout';
 
 const ExperiencePage: React.FC = () => {
   const experiences = [
@@ -111,7 +112,7 @@ const ExperiencePage: React.FC = () => {
     },
     {
       id: 2,
-      name: "Technical Skills",
+      name: "Technical Stack",
       issuer: "Self-Taught & Professional Experience",
       date: "2018 - Present",
       description: "Languages: Python, SQL, Bash, TypeScript. Data & ETL: Pandas, Spark, dbt, Airflow, data modeling, reconciliation. Cloud: AWS (S3, Glue, Athena, Redshift, Kinesis), Terraform, Docker. Databases: PostgreSQL, SQLAlchemy, Redshift. BI: Power BI, Tableau. Backend: Flask, FastAPI, RESTful APIs."
@@ -119,41 +120,12 @@ const ExperiencePage: React.FC = () => {
   ];
 
   return (
-    <div
-      className="min-h-screen bg-gradient-to-br from-slate-900 via-orange-900 to-slate-900"
-      style={{
-        background: 'linear-gradient(135deg, #0f172a 0%, #c2410c 50%, #0f172a 100%)',
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
-      }}
-    >
-      {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-8">
-            <a href="/simple" className="text-xl font-bold text-white">Fidel Fúnez C.</a>
-            <div className="hidden md:flex space-x-6">
-              <a href="/simple/about" className="text-white/80 hover:text-white transition-colors">About</a>
-              <a href="/simple/projects" className="text-white/80 hover:text-white transition-colors">Projects</a>
-              <a href="/simple/experience" className="text-white hover:text-orange-300 transition-colors">Experience</a>
-              <a href="/simple/contact" className="text-white/80 hover:text-white transition-colors">Contact</a>
-            </div>
-          </div>
-          <div className="flex items-center space-x-4">
-            <a 
-              href="/dashboard" 
-              className="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-colors border border-white/20"
-            >
-              Try FidOS
-            </a>
-          </div>
-        </div>
-      </nav>
-
+    <SimpleLayout activePage="experience">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Work <span className="bg-gradient-to-r from-orange-300 to-amber-300 bg-clip-text text-transparent">Experience</span>
+            Work <span className="bg-gradient-to-r from-blue-300 to-cyan-300 bg-clip-text text-transparent">Experience</span>
           </h1>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
             My professional journey from data operations to data engineering, building reliable data systems, ETL pipelines, and analytics platforms.
@@ -173,11 +145,11 @@ const ExperiencePage: React.FC = () => {
                     <div className="flex items-start justify-between mb-4">
                       <div>
                         <h3 className="text-2xl font-bold text-white mb-2">{experience.title}</h3>
-                        <p className="text-orange-300 font-semibold text-lg mb-1">{experience.company}</p>
+                        <p className="text-blue-300 font-semibold text-lg mb-1">{experience.company}</p>
                         <p className="text-white/60 mb-2">{experience.location}</p>
                       </div>
                       <div className="text-right">
-                        <span className="px-3 py-1 bg-orange-600/20 text-orange-300 text-sm rounded-full">
+                        <span className="px-3 py-1 bg-blue-600/20 text-blue-300 text-sm rounded-full">
                           {experience.type}
                         </span>
                       </div>
@@ -188,7 +160,7 @@ const ExperiencePage: React.FC = () => {
                       <ul className="space-y-2">
                         {experience.achievements.map((achievement, idx) => (
                           <li key={idx} className="text-white/70 flex items-start">
-                            <span className="text-orange-300 mr-2">•</span>
+                            <span className="text-blue-300 mr-2">•</span>
                             {achievement}
                           </li>
                         ))}
@@ -200,7 +172,7 @@ const ExperiencePage: React.FC = () => {
                       <h4 className="text-lg font-semibold text-white mb-4">Technologies Used</h4>
                       <div className="flex flex-wrap gap-2">
                         {experience.technologies.map((tech) => (
-                          <span key={tech} className="px-3 py-1 bg-orange-600/20 text-orange-300 text-sm rounded-full">
+                          <span key={tech} className="px-3 py-1 bg-blue-600/20 text-blue-300 text-sm rounded-full">
                             {tech}
                           </span>
                         ))}
@@ -227,7 +199,7 @@ const ExperiencePage: React.FC = () => {
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">{edu.degree}</h3>
-                    <p className="text-orange-300 font-semibold mb-1">{edu.school}</p>
+                    <p className="text-blue-300 font-semibold mb-1">{edu.school}</p>
                     <p className="text-white/60 text-sm">{edu.period}</p>
                   </div>
                 </div>
@@ -237,7 +209,7 @@ const ExperiencePage: React.FC = () => {
                   <ul className="space-y-2">
                     {edu.achievements.map((achievement, idx) => (
                       <li key={idx} className="text-white/70 flex items-start">
-                        <span className="text-orange-300 mr-2">•</span>
+                        <span className="text-blue-300 mr-2">•</span>
                         {achievement}
                       </li>
                     ))}
@@ -259,7 +231,7 @@ const ExperiencePage: React.FC = () => {
                 <div className="text-center mb-4">
                   <div className="text-4xl mb-4">🏆</div>
                   <h3 className="text-xl font-bold text-white mb-2">{cert.name}</h3>
-                  <p className="text-orange-300 font-medium mb-1">{cert.issuer}</p>
+                  <p className="text-blue-300 font-medium mb-1">{cert.issuer}</p>
                   <p className="text-white/60 text-sm">{cert.date}</p>
                 </div>
                 <p className="text-white/70 text-center leading-relaxed">{cert.description}</p>
@@ -274,58 +246,61 @@ const ExperiencePage: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-12 text-center">Skills Evolution</h2>
           <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gradient-to-b from-orange-500 to-amber-500"></div>
-            
+            {/* Timeline Line - hidden on mobile, visible on md+ */}
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gradient-to-b from-blue-500 to-cyan-500"></div>
+
             <div className="space-y-12">
-              <div className="relative flex items-center">
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full border-4 border-white"></div>
-                <div className="w-5/12 pr-8 text-right">
+              {/* 2024 - Present */}
+              <div className="relative flex flex-col md:flex-row md:items-center gap-6 md:gap-0">
+                <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-white top-0 md:top-1/2 md:-translate-y-1/2 z-10"></div>
+                <div className="md:w-5/12 md:pr-8 md:text-right pl-8 md:pl-0">
                   <h3 className="text-xl font-bold text-white mb-2">2024 - Present</h3>
                   <p className="text-white/80">Data & Systems Engineering</p>
-                  <div className="mt-3">
-                    <span className="px-3 py-1 bg-orange-600/20 text-orange-300 text-sm rounded-full mr-2">Python</span>
-                    <span className="px-3 py-1 bg-orange-600/20 text-orange-300 text-sm rounded-full mr-2">Flask</span>
-                    <span className="px-3 py-1 bg-orange-600/20 text-orange-300 text-sm rounded-full">AWS</span>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-blue-600/20 text-blue-300 text-sm rounded-full">Python</span>
+                    <span className="px-3 py-1 bg-blue-600/20 text-blue-300 text-sm rounded-full">Flask</span>
+                    <span className="px-3 py-1 bg-blue-600/20 text-blue-300 text-sm rounded-full">AWS</span>
                   </div>
                 </div>
-                <div className="w-5/12 pl-8">
+                <div className="md:w-5/12 md:pl-8 pl-8 md:pl-8">
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
                     <p className="text-white/70">Building data tracking systems, reporting pipelines, dashboards, and production-ready backend APIs</p>
                   </div>
                 </div>
               </div>
 
-              <div className="relative flex items-center">
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-amber-500 rounded-full border-4 border-white"></div>
-                <div className="w-5/12 pr-8 text-right">
+              {/* 2021 - 2024 */}
+              <div className="relative flex flex-col md:flex-row md:items-center gap-6 md:gap-0">
+                <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-cyan-500 rounded-full border-4 border-white top-0 md:top-1/2 md:-translate-y-1/2 z-10"></div>
+                <div className="md:w-5/12 md:pr-8 md:text-right pl-8 md:pl-0">
                   <h3 className="text-xl font-bold text-white mb-2">2021 - 2024</h3>
                   <p className="text-white/80">Data Engineering & Systems</p>
-                  <div className="mt-3">
-                    <span className="px-3 py-1 bg-amber-600/20 text-amber-300 text-sm rounded-full mr-2">Data Pipelines</span>
-                    <span className="px-3 py-1 bg-amber-600/20 text-amber-300 text-sm rounded-full mr-2">ETL</span>
-                    <span className="px-3 py-1 bg-amber-600/20 text-amber-300 text-sm rounded-full">Power BI</span>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-cyan-600/20 text-cyan-300 text-sm rounded-full">Data Pipelines</span>
+                    <span className="px-3 py-1 bg-cyan-600/20 text-cyan-300 text-sm rounded-full">ETL</span>
+                    <span className="px-3 py-1 bg-cyan-600/20 text-cyan-300 text-sm rounded-full">Power BI</span>
                   </div>
                 </div>
-                <div className="w-5/12 pl-8">
+                <div className="md:w-5/12 md:pl-8 pl-8 md:pl-8">
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
                     <p className="text-white/70">Optimizing data pipelines, ensuring data integrity, building dashboards and analytics for stakeholders</p>
                   </div>
                 </div>
               </div>
 
-              <div className="relative flex items-center">
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-orange-400 rounded-full border-4 border-white"></div>
-                <div className="w-5/12 pr-8 text-right">
+              {/* 2018 - 2021 */}
+              <div className="relative flex flex-col md:flex-row md:items-center gap-6 md:gap-0">
+                <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-blue-400 rounded-full border-4 border-white top-0 md:top-1/2 md:-translate-y-1/2 z-10"></div>
+                <div className="md:w-5/12 md:pr-8 md:text-right pl-8 md:pl-0">
                   <h3 className="text-xl font-bold text-white mb-2">2018 - 2021</h3>
                   <p className="text-white/80">Data Operations</p>
-                  <div className="mt-3">
-                    <span className="px-3 py-1 bg-orange-500/20 text-orange-300 text-sm rounded-full mr-2">Database Management</span>
-                    <span className="px-3 py-1 bg-orange-500/20 text-orange-300 text-sm rounded-full mr-2">Data Validation</span>
-                    <span className="px-3 py-1 bg-orange-500/20 text-orange-300 text-sm rounded-full">ETL</span>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm rounded-full">Database Management</span>
+                    <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm rounded-full">Data Validation</span>
+                    <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm rounded-full">ETL</span>
                   </div>
                 </div>
-                <div className="w-5/12 pl-8">
+                <div className="md:w-5/12 md:pl-8 pl-8 md:pl-8">
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
                     <p className="text-white/70">Administering payroll systems, maintaining HR databases, implementing data validation and reporting</p>
                   </div>
@@ -344,7 +319,7 @@ const ExperiencePage: React.FC = () => {
             With 6+ years of experience building data systems and ETL pipelines, I'm ready to help bring your data initiatives to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/simple/contact" className="px-8 py-4 bg-gradient-to-r from-orange-600 to-amber-600 text-white font-semibold rounded-lg hover:from-orange-700 hover:to-amber-700 transition-all transform hover:scale-105">
+            <a href="/simple/contact" className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all transform hover:scale-105">
               Get In Touch
             </a>
             <a href="/simple/projects" className="px-8 py-4 bg-transparent text-white font-semibold rounded-lg border-2 border-white/30 hover:bg-white/10 transition-colors">
@@ -353,26 +328,7 @@ const ExperiencePage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="py-12 px-6 border-t border-white/10">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-            <div className="text-white/60 mb-4 md:mb-0">
-              © 2026 Fidel Fúnez C. All rights reserved.
-            </div>
-            <div className="flex space-x-6">
-              <a href="https://github.com/fidelfunez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">GitHub</a>
-              <a href="https://x.com/fidelfunez" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">X</a>
-              <a href="mailto:fidelfunezf@gmail.com" className="text-white/60 hover:text-white transition-colors">Email</a>
-            </div>
-          </div>
-          <div className="text-sm text-white/40">
-            Built with Next.js, TypeScript, and Tailwind CSS
-          </div>
-        </div>
-      </footer>
-    </div>
+    </SimpleLayout>
   );
 };
 
